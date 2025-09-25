@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class GameMenu{
@@ -29,10 +30,9 @@ public class GameMenu{
 		// 5.b
 		Scanner scanner = new Scanner(System.in);
 
-		String choice = scanner.nextLine();
-
-		System.out.println("Type a number to choose an action")
 		displayMenu();
+		System.out.println("Type a number to choose an action");
+		String choice = scanner.nextLine();
 
 		return choice;
 
