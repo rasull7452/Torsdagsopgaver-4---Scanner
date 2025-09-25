@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 
-// 4.a
+
 public class GameMenu{
 
-	// 4.b
+
 	private ArrayList<String> actions = new ArrayList<String>();
 
-	// 4.c
+
 	public GameMenu(ArrayList<String> gameMenuActions){
 
-		// 4.d
+
 		this.actions = gameMenuActions;
 
 	}
-	// 4.h
+
 	public void displayMenu(){
 
 		for(int i = 0; i < this.actions.size(); i++){
@@ -21,5 +21,21 @@ public class GameMenu{
 			System.out.println(this.actions.get(i));
 
 		}
+	}
+
+	// 5.a & 5.c
+	public String promptUser(){
+
+		// 5.b
+		Scanner scanner = new Scanner(System.in);
+
+		String choice = scanner.nextLine();
+
+		System.out.println("Type a number to choose an action")
+		displayMenu();
+
+		return choice;
+
+
 	}
 }
